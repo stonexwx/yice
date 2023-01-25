@@ -1,0 +1,89 @@
+<!--index.wxml-->
+<view class="container">
+  <van-notify id="van-notify" />
+  <van-toast id="van-toast" />
+  <view class="background">
+    <image src="../static/img/record/set.svg"></image>
+  </view>
+  <view class="content">
+    <view class="nav-person" bindtap="queryTime">
+      <text wx:if="{{showTimer}}">点击计时</text>
+      <text wx:if="{{!showTimer}}">
+        {{h}}:{{m}}:{{s}}
+      </text>
+    </view>
+    <view class="nav-banner">
+      <view class="banner-1" bindtap="showTime">
+        <view class="image-1">
+          <image src="http://qsmx.org.cn/系统设置.svg"></image>
+        </view>
+
+        <view class="title">
+          <text>设置提醒</text>
+        </view>
+
+      </view>
+      <view class="banner-1" bindtap="goNavigation" data-index="5">
+        <view class="image-1">
+          <image src="http://qsmx.org.cn/PC发文.svg"></image>
+        </view>
+
+        <view class="title">
+          <text>今日推文</text>
+        </view>
+
+      </view>
+    </view>
+    <view class="screen screen1">
+      <block>
+        <view class="contact" bindtap="showNext" data-idx="{{index}}">
+          <share-element class="avatar" key="avatar" duration="{{duration}}" transform="{{transformIdx === index}}">
+          </share-element>
+          <share-element duration="{{duration}}" class="name" key="name" transform="{{transformIdx === index}}">
+            自我判断
+          </share-element>
+          <view class="list">
+            <text>点击可根据您的排便选择适合您的拉拉状态</text>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="clickButton">
+      <button style="color: black;" bindtap="clear">点击结束计时并上传</button>
+    </view>
+  </view>
+  <van-action-sheet show="{{ showTime }}" bind:close="timeClose" bind:select="timeSelect" actions="{{ Timeactions }}" description="厕友，不宜久蹲哦~健康五分钟时我们会提醒你一次！" />
+
+
+  <van-action-sheet show="{{ showDia }}" actions="{{ actions }}" bind:close="onClose" bind:select="onSelect"/>
+
+  <page-container show="{{show}}" overlay="{{overlay}}" close-on-slide-down duration="{{duration}}" position="{{position}}" bindbeforeenter="onBeforeEnter" bindenter="onEnter" bindafterenter="onAfterEnter" bindbeforeleave="onBeforeLeave" bindleave="onLeave" bindafterleave="onAfterLeave" bindclickoverlay="onClickOverlay">
+    <view class="screen">
+      <view class="contact">
+        <share-element class="name" key="name" duration="{{duration}}" transform>
+          自我判断
+        </share-element>
+        <view class="paragraph {{show ? 'enter' : ''}}">
+          <text>大便的产生是由于食物未被吸收，经消化道末端以固体或半流体形状排出体外。大便里面主要是以大肠杆菌为主，还有厌氧菌以及其他微生物。判断大便是否正常根据以下几方面：</text>
+        </view>
+        <view class="paragraph {{show ? 'enter' : ''}}">
+          <text>1、要判断形状，传统意义上大便是香蕉便，形状像香蕉；</text>
+        </view>
+        <view class="paragraph {{show ? 'enter' : ''}}">
+          <text>2、要判断其颜色，颜色是以金黄色或淡黄色为主，和香蕉的颜色差不多少。如果出现绿色或黑色大便，是肠道出现问题；</text>
+        </view>
+        <view class="paragraph {{show ? 'enter' : ''}}">
+          <text>3、还要判断气味，大便有点臭味，但是味道不能过于浓烈，如果特别臭，也可以提示消化道有问题，如婴儿或没断奶的孩子，大便其实很清淡，如果患者吃了特别多的高蛋白饮食，也会出现恶臭的现象，这都提示患者的消化功能出现问题；</text>
+        </view>
+        <view class="paragraph {{show ? 'enter' : ''}}">
+          <text>表面凹凸不平的，水分少少的:很不幸的，你便秘了。要改善这种情况最好多吃点蔬果和多喝水吧！</text>
+        </view>
+        <view class="paragraph {{show ? 'enter' : ''}}">
+          <text>4、大便频率，即正常大便是1-2天1次，有个人差异，个别人1天2次，这都属于正常范围之内，只要大便比较成形，没有其他伴随症状就可以。如果长期便秘，大便出现异常，也要引起重视。</text>
+        </view>
+        <button class="screen2-button" bindtap="showPrev" hidden="{{!show}}" hover-class="none">Click Me</button>
+      </view>
+    </view>
+  </page-container>
+
+</view>

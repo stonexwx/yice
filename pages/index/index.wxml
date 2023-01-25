@@ -1,0 +1,37 @@
+<view class="container">
+  <!-- 背景图 -->
+  <view class="background">
+    <image src="../static/img/index/back2.svg"></image>
+  </view>
+
+  <view class="content">
+    <view class="nav-person" wx:if="{{!isTimer}}" bindtap="toggleTimer">
+      <text>今日拉了</text>
+      <view>
+        <text style="font-size: 3em;">{{wcNum}}</text>
+        <text style="margin-left: 20px;">次</text>
+      </view>
+    </view>
+
+    <view class="nav-banner">
+      <view class="banner-1" bindtap="goNavigation" data-index="3">
+        <image src="http://www.qsmx.org.cn/%E9%9B%86%E5%90%88.svg"></image>
+        <text>拉拉日历</text>
+      </view>
+      <view class="banner-1" bindtap="goNavigation" data-index="1">
+        <image src="http://www.qsmx.org.cn/%E8%B6%B3%E8%BF%B9.svg"></image>
+        <text>宜厕地图</text>
+      </view>
+    </view>
+    <view class="content-list">
+      <view class="list-item" bindtap="goNavigation" data-index="5">
+        <image src="../static/icon/index/list-icon.svg"></image>
+        <text>今日推文 ></text>
+      </view>
+      <view class="list-item" bindtap="goNavigation" data-index="6">
+        <image src="../static/icon/index/list-icon3.svg"></image>
+        <text>宜厕推荐 ></text>
+      </view>
+    </view>
+  </view>
+</view>

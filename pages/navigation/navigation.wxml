@@ -1,0 +1,11 @@
+<view class="container">
+    <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true"
+         markers="{{markers}}" polyline="{{polyline}}" bindmarkertap="makertap">
+
+    </map>
+    <view bindtap="daohang" data-destination="{{item}}" class="select" wx:for="{{markers}}" wx:key="id">
+        <text style="font-size:15px">{{item.name}}</text>
+        <text style="font-size: 15px;color:{{item.color}}">热度:{{item.host}}%</text>
+        <image src="../static/icon/navigation/1.png"></image>
+    </view>
+</view>

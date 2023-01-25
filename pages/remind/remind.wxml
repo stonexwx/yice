@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="remind">
+        <text>温馨提示:如厕时间不宜过长，时间过长易造成巴拉巴拉巴拉的危害</text>
+    </view>
+    <view class="set">
+        <view class="set-item">
+            <text>开启提醒</text>
+            <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+        </view>
+        <view class="set-item">
+            <text>开启提醒</text>
+            <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+        </view>
+        <view class="set-item">
+            <text>开启提醒</text>
+            <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+        </view>
+        <view class="set-item">
+            <text>开启提醒</text>
+            <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+        </view>
+        <view class="set-item">
+            <text>开启提醒</text>
+            <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+        </view>
+    </view>
+</view>

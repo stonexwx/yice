@@ -1,0 +1,7 @@
+<view class="container">
+    <image src="../static/img/tips/yoga.svg"></image>
+    <view class="tip-1" bindtap="goNavigation" data-index="3">
+        <text>宜厕趣味科普</text>
+    </view>
+</view>
+<image src="../static/img/tips/router.svg"></image>

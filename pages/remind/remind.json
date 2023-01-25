@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+    "navigationBarBackgroundColor": "#fce93f",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "宜厕提醒",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light"
+}

@@ -1,0 +1,38 @@
+/* pages/remind/remind.wxss */
+.container{
+    width: 100%;
+    font-family: "等线";
+    padding: 0;
+}
+page{
+    background-color: #ededed;
+}
+.remind{
+    margin-top: 30px;
+    background-color: #fce93f;
+    border-radius: 20px;
+    width: 80%;
+    height: 200rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remind text{
+    width: 80%;
+    font-weight: bold;
+}
+.set{
+    width: 75%;
+    margin-top: 30px;
+}
+.set .set-item{
+    padding: 10px;
+    border-radius: 61px;
+background: #ededed;
+box-shadow:  22px 22px 22px #b6b6b6,
+             -22px -22px 22px #ffffff;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             margin-bottom: 20px;
+}

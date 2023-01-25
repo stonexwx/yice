@@ -1,0 +1,28 @@
+/* pages/tips/tips.wxss */
+page {
+    background-color: #ffdc18;
+    font-family: "等线";
+    padding: 0;
+}
+.container{
+    padding: 0;
+    position: relative;
+}
+.tip-1 {
+    width: 80%;
+    height: 250rpx;
+    border-radius: 5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 3px 1px grey;
+    font-size: 2em;
+    color: #ffdc18;
+    margin-bottom: 20px;
+}
+page>image:last-child{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}

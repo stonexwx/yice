@@ -1,0 +1,15 @@
+<!--pages/methodsDetail/methodsDetail.wxml-->
+<view class="container">
+    <view class="text-title">
+        <text>{{title}}</text>
+    </view>
+    <view class="text-date">
+        <text>{{date}}</text>
+    </view>
+    <view class="text-author">
+        <text>小宜</text>
+    </view>
+    <view class="text-content">
+        <text>{{content}}</text>
+    </view>
+</view>

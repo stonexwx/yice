@@ -1,0 +1,69 @@
+<view class="container">
+    <view class="page-body">
+        <view class="page-section page-section-spacing swiper">
+            <swiper class="banners" indicator-dots autoplay indicator-active-color="#d43c33" indicator-color="ivory">
+                <swiper-item wx:for="{{img}}" wx:key="*this">
+                    <image mode="heightFix" src="{{item}}" />
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+    <view style="margin-top: 30px;color: grey;">——今日商品——</view>
+    <view class="goods-box">
+        <view class="good">
+            <view class="good-img">
+                <image src="../static/img/recommend/123.png"></image>
+            </view>
+            <view class="good-title">
+                <text>宜厕空气清新剂改善便后味这是一款很好的产品</text>
+            </view>
+            <view class="good-price"><text style="font-size: 1.3em;font-weight: bold;color: red;">20积分</text><text>点击查看 ></text></view>
+        </view>
+        <view class="good">
+            <view class="good-img">
+                <image src="../static/img/recommend/11.png"></image>
+            </view>
+            <view class="good-title">
+                <text>宜厕耳机厕所专用隔音防细菌</text>
+            </view>
+            <view class="good-price"><text style="font-size: 1.3em;font-weight: bold;color: red;">20积分</text><text>点击查看 ></text></view>
+        </view>
+        <view class="good">
+            <view class="good-img">
+                <image src="../static/img/recommend/12.png"></image>
+            </view>
+            <view class="good-title">
+                <text>宜厕不粘锅做出美味的健康饭</text>
+            </view>
+            <view class="good-price"><text style="font-size: 1.3em;font-weight: bold;color: red;">20积分</text><text>点击查看 ></text></view>
+        </view>
+        <view class="good">
+            <view class="good-img">
+                <image src="../static/img/recommend/16.jpg"></image>
+            </view>
+            <view class="good-title">
+                <text>益生菌促进肠道吸收健康肠胃</text>
+            </view>
+            <view class="good-price"><text style="font-size: 1.3em;font-weight: bold;color: red;">20积分</text><text>点击查看 ></text></view>
+        </view>
+        <view class="good">
+            <view class="good-img">
+                <image src="../static/img/recommend/14.png"></image>
+            </view>
+            <view class="good-title">
+                <text>宜厕汤锅不粘锅健康饮食</text>
+            </view>
+            <view class="good-price"><text style="font-size: 1.3em;font-weight: bold;color: red;">20积分</text><text>点击查看 ></text></view>
+        </view>
+        <view class="good">
+            <view class="good-img">
+                <image src="../static/img/recommend/15.jpg"></image>
+            </view>
+            <view class="good-title">
+                <text>AD钙奶健康版无糖促进肠道吸收</text>
+            </view>
+            <view class="good-price"><text style="font-size: 1.3em;font-weight: bold;color: red;">20积分</text><text>点击查看 ></text></view>
+        </view>
+    </view>
+    <view style="margin: 20px 0;color: grey;">——到底啦——</view>
+</view>

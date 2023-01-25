@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="bg">
+    <view class="methods">
+            <view class="sub-methods" wx:for="{{textForm}}" bindtap="goText" data-item="{{item}}">
+                <text class="text-title">{{item.title}}</text>
+                <text class="text-title">{{item.adminId}}</text>
+                <view class="text-date">
+                <text>{{item.addtime}}</text></view>
+            </view>
+    </view>
+</view>

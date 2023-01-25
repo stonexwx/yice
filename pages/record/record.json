@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-notify": "@vant/weapp/notify/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
+  }
+}
